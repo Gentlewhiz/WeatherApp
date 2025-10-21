@@ -450,6 +450,12 @@ header{
     width: 100%;
     gap: 10px;
   }
+  .searchText{
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  }
   .cityInput{
     width: 100%;
   }
@@ -523,6 +529,12 @@ header{
   .apiError{
     font-size: 10px;
     margin-top: 20px;
+  }
+  .searchText{
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
   }
   .todays-overlay .degree-display .todaysDegree{
     font-size: 3rem;
@@ -610,6 +622,12 @@ header{
     font-size: 10px;
     margin-top: 20px;
   }
+  .searchText{
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  }
   .todays-overlay .degree-display .todaysDegree{
     font-size: 3rem;
   }
@@ -645,6 +663,12 @@ header{
   .todays-overlay .degree-display .todaysDegree{
     font-size: 3rem;
   }
+  .searchText{
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  }
   .hourly-forecast p{
     font-size: 20px;
   }
@@ -678,6 +702,12 @@ header{
   .todays-overlay .degree-display .todaysDegree{
     font-size: 3rem;
   }
+  .searchText{
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  }
   .forecastCard{
     margin: 10px 0 10px 0;
     display: grid;
@@ -707,6 +737,12 @@ header{
   }
   .hourly-forecast p{
     font-size: 20px;
+  }
+  .searchText{
+  gap: 1rem;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
   }
   .todays-overlay .degree-display .todaysDegree{
     font-size: 3rem;
