@@ -98,7 +98,7 @@ document.addEventListener("DOMContentLoaded", function () {
       0: { description: "Clear sky", icon: "./assets/images/icon-sunny.webp" },
       1: { description: "Mainly clear", icon: "./assets/images/icon-sunny.webp" },
       2: { description: "Partly cloudy", icon: "./assets/images/icon-partly-cloudy.webp" },
-      3: { description: "Overcast", icon: "./assets/images/icon-cloudy.webp" },
+      3: { description: "Overcast", icon: "./assets/images/icon-partly-cloudy.webp" },
       45: { description: "Fog", icon: "./assets/images/icon-fog.webp" },
       48: { description: "Depositing rime fog", icon: "./assets/images/icon-fog.webp" },
       51: { description: "Light drizzle", icon: "./assets/images/icon-rain.webp" },
