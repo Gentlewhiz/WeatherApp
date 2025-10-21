@@ -92,13 +92,28 @@
       <h1 class="howToday">How's the sky looking today?</h1>
 
       <div class="search-bar">
+        <div class="searchText">
         <input
           type="text"
           placeholder="  Search for a place..."
           class="cityInput" id="cityInput"
         />
         <button type="submit" class="searchBTN" id="searchBTN">Search</button>
+  </div>
+      <div class="apiError" id="errorMessage">
+        <img src="./assets/images/icon-error.svg" alt="" class="retryIcon" />
+        <h1>Something went Wrong</h1>
+        <p>
+          we couldn't connect to the server(Api error)<br />
+          please try again in a few moments
+        </p>
+        <button id="retryBTN" class="retryBTN">
+          <img src="./assets/images/icon-retry.svg" alt="" />Retry
+        </button>
+    </div>
+
       </div>
+    
 
       <div class="main" id="mainContent" style="visibility:hidden;">
         <div class="right">
@@ -184,17 +199,7 @@
           </div>
         </div>
       </div>
-      <div class="apiError" id="errorMessage">
-        <img src="./assets/images/icon-error.svg" alt="" class="retryIcon" />
-        <h1>Something went Wrong</h1>
-        <p>
-          we couldn't connect to the server(Api error)<br />
-          please try again in a few moments
-        </p>
-        <button id="retryBTN" class="retryBTN">
-          <img src="./assets/images/icon-retry.svg" alt="" />Retry
-        </button>
-      </div>
+      
     </div>
     <script src="app.js"></script>
   </body>
