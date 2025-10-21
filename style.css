@@ -420,6 +420,9 @@ header{
   .container{
     width: 100%;
   }
+  .todaysDegree span{
+    font-size: small;
+  }
   .hourly-forecast p{
     font-size: 20px;
   }
@@ -431,9 +434,6 @@ header{
     margin-bottom: 1.5rem;
     font-weight: bolder;
     font-size: 1.2rem;
-  }
-  .todaysDegree{
-    font-size: 1.5rem;
   }
   .search-bar{
     flex-direction: column;
@@ -481,6 +481,7 @@ header{
     transform: translate(0%, -130%);
     z-index: 10;
     margin-top: 26px;
+    height: 40px;
   }
   .weather-card{
     grid-template-columns: repeat(2, 1fr);
@@ -512,6 +513,9 @@ header{
   }
   .hourly-forecast p{
     font-size: 20px;
+  }
+  .todaysDegree{
+    font-size: small;
   }
   .right{
     width: 100%;
@@ -560,6 +564,7 @@ header{
     display: flex;
     flex-direction: column;
     align-items: center;
+    height: 40px;
     bottom: 17rem;
     gap: 3rem;
     text-align: center;
@@ -596,8 +601,12 @@ header{
   .hourly-forecast p{
     font-size: 20px;
   }
+  .todaysDegree{
+    font-size:small;
+  }
   .todays-overlay{
     margin-top: 70px;
+    height: 40px;
   }
   .howToday{
     text-align: center;
@@ -625,6 +634,9 @@ header{
   .hourly-forecast p{
     font-size: 20px;
   }
+  .todaysDegree{
+    font-size: small;
+  }
   .forecastCard{
     margin: 10px 0 10px 0;
     display: grid;
@@ -634,11 +646,14 @@ header{
   .display-forecast{
     height: 160px;
   }
-.howToday{
+  .howToday{
     text-align: center;
     margin-bottom: 1.5rem;
     font-weight: bolder;
     font-size: 1.2rem;
+  }
+  .todays-overlay{
+    height: 40px;
   }
   .apiError{
     top: 40rem;
@@ -651,6 +666,9 @@ header{
   }
   .hourly-forecast p{
     font-size: 20px;
+  }
+  .todaysDegree{
+    font-size: small;
   }
   .forecastCard{
     margin: 10px 0 10px 0;
@@ -669,6 +687,7 @@ header{
   }
   .todays-overlay{
     margin-top: 10px;
+    height: 40px;
   }
   .apiError{
     top: 40rem;
@@ -678,6 +697,9 @@ header{
 @media screen and (min-width: 390px) and (max-width:844px){
   .weather-card{
     margin-top: 60px;
+  }
+  .todaysDegree{
+    font-size: small;
   }
   .hourly-forecast p{
     font-size: 20px;
@@ -702,6 +724,7 @@ header{
   }
   .todays-overlay{
     margin-top: 30px;
+    height: 40px;
   }
   .apiError{
     top: 40rem;
