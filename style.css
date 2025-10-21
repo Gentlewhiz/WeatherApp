@@ -416,35 +416,28 @@ header{
     transform: rotate(360deg);
   }
 }
-
-/* .suggestions {
-  position: absolute;
-  background: #fff;
-  border: 1px solid #ddd;
-  width: 100%;
-  max-height: 180px;
-  overflow-y: auto;
-  border-radius: 8px;
-  margin-top: 5px;
-  list-style: none;
-  z-index: 10;
-}
-
-.suggestion-item {
-  padding: 8px 12px;
-  cursor: pointer;
-}
-
-.suggestion-item:hover {
-  background: #f1f1f1;
-} */
-
 @media (max-width: 480px) {
   .container{
     width: 100%;
   }
+  .hourly-forecast p{
+    font-size: 10px;
+  }
   .right{
     width: 100%;
+  }
+  .howToday{
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-weight: bolder;
+    font-size: 1.2rem;
+  }
+  .todays-overlay{
+    margin-top: 10px;
+    height: 70px;
+  }
+  .todaysDegree{
+    font-size: 1.5rem;
   }
   .search-bar{
     flex-direction: column;
@@ -513,13 +506,29 @@ header{
     top: 40rem;
     left: 11.5rem;
   }
+  .display-forecast{
+    height: 160px;
+  }
 }
 @media screen and (min-width: 768px) and (max-width: 1024px) {
   .container{
     width: 100%;
   }
+  .hourly-forecast p{
+    font-size: 10px;
+  }
   .right{
     width: 100%;
+  }
+  .howToday{
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-weight: bolder;
+    font-size: 1.2rem;
+  }
+  .todays-overlay{
+    margin-top: 10px;
+    height: 70px;
   }
   .search-bar{
     flex-direction: column;
@@ -582,6 +591,9 @@ header{
   .imperial-menu{
     right: 2rem;
   }
+  .display-forecast{
+    height: 160px;
+  }
   
 }
 @media screen and (min-width: 320px) and (max-width:568px){
@@ -589,8 +601,21 @@ header{
     top: 40rem;
     left: 6.5rem;
   }
+  .hourly-forecast p{
+    font-size: 10px;
+  }
   .todays-overlay{
     margin-top: 70px;
+    height: 70px;
+  }
+  .howToday{
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-weight: bolder;
+    font-size: 1.2rem;
+  }
+  .display-forecast{
+    height: 160px;
   }
   .weather-card{
     margin-top: -50px;
@@ -606,11 +631,26 @@ header{
   .weather-card{
     margin-top: 5px;
   }
+  .hourly-forecast p{
+    font-size: 10px;
+  }
   .forecastCard{
     margin: 10px 0 10px 0;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
+  }
+  .display-forecast{
+    height: 160px;
+  }
+  .todays-overlay{
+    height: 70px;
+  }
+.howToday{
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-weight: bolder;
+    font-size: 1.2rem;
   }
   .apiError{
     top: 40rem;
@@ -621,14 +661,27 @@ header{
   .weather-card{
     margin-top: 70px;
   }
+  .hourly-forecast p{
+    font-size: 10px;
+  }
   .forecastCard{
     margin: 10px 0 10px 0;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
   }
+  .howToday{
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-weight: bolder;
+    font-size: 1.2rem;
+  }
+  .display-forecast{
+    height: 160px;
+  }
   .todays-overlay{
     margin-top: 10px;
+    height: 70px;
   }
   .apiError{
     top: 40rem;
@@ -639,14 +692,30 @@ header{
   .weather-card{
     margin-top: 60px;
   }
+  .hourly-forecast p{
+    font-size: 10px;
+  }
   .forecastCard{
     margin: 10px 0 10px 0;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
   }
+  .todaysDegree{
+    font-size: 1.5rem;
+  }
+  .display-forecast{
+    height: 160px;
+  }
+  .howToday{
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-weight: bolder;
+    font-size: 1.2rem;
+  }
   .todays-overlay{
     margin-top: 30px;
+    height: 70px;
   }
   .apiError{
     top: 40rem;
