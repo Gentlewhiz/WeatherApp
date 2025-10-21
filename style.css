@@ -596,6 +596,15 @@ header{
   .apiError{
     top: 40rem;
     left: 6.5rem;
+    font-size: 1.2rem;
+    position: static;
+    transform: translate(2%, -1330%);
+  }
+   .apiError .retryBTN {
+    font-size: 1.2rem;
+    position: inherit;
+    transform: translate(50%, -0%);
+    text-align: center;
   }
   .todays-overlay .degree-display .todaysDegree{
     font-size: 3rem;
@@ -653,6 +662,15 @@ header{
   .apiError{
     top: 40rem;
     left: 7.5rem;
+    font-size: 1.2rem;
+    position: static;
+    transform: translate(2%, -1200%);
+  }
+   .apiError .retryBTN {
+    font-size: 1.2rem;
+    position: inherit;
+    transform: translate(50%, -0%);
+    text-align: center;
   }
 }
 @media screen and (min-width: 428px) and (max-width:926px){
@@ -686,6 +704,15 @@ header{
   .apiError{
     top: 40rem;
     left: 12.5rem;
+    font-size: 1.2rem;
+    position: static;
+    transform: translate(2%, -1200%);
+  }
+   .apiError .retryBTN {
+    font-size: 1.2rem;
+    position: inherit;
+    transform: translate(50%, -0%);
+    text-align: center;
   }
 }
 @media screen and (min-width: 390px) and (max-width:844px){
@@ -722,5 +749,14 @@ header{
   .apiError{
     top: 40rem;
     left: 9.7rem;
+    font-size: 1.2rem;
+    position: static;
+    transform: translate(2%, -1200%);
+  }
+   .apiError .retryBTN {
+    font-size: 1.2rem;
+    position: inherit;
+    transform: translate(50%, -0%);
+    text-align: center;
   }
 }
