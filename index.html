@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Frontend Mentor | Weather app</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container" id="formContainer">
+      <header>
+        <div class="logo">
+          <img src="./assets/images/logo.svg" alt="" />
+        </div>
+        <div class="unit-dropDown">
+          <button id="imperial-dropdown" class="imperial-BTN">
+            <img src="./assets/images/icon-units.svg" alt="" />
+            Units
+            <img
+              src="./assets/images/icon-dropdown.svg"
+              alt=""
+              class="dropdown-icon"
+            />
+          </button>
+          <div class="imperial-menu" id="imperial-menu">
+            <h4>Switch to Imperial/Metric</h4>
+            <p>Temperature</p>
+            <button class="btn-group" id="Celsius-btn">
+              Celsius(&deg;C)
+              <span id="icon-checkmark" class="CheckMark-Celsius">
+                <img src="./assets/images/icon-checkmark.svg" alt="" />
+              </span>
+            </button>
+            <button class="btn-group" id="Fahrenheit-btn">
+              Fahrenheit(&deg;F)
+              <span id="icon-checkmark" class="CheckMark-Fahrenheit">
+                <img src="./assets/images/icon-checkmark.svg" alt="" />
+              </span>
+            </button>
+            <p>Wind Speed</p>
+            <button class="btn-group" id="Km-btn">
+              km/h
+              <span id="icon-checkmark" class="CheckMark-Km">
+                <img src="./assets/images/icon-checkmark.svg" alt="" />
+              </span>
+            </button>
+            <button class="btn-group" id="mph-btn">
+              mph
+              <span id="icon-checkmark" class="checkMark-Mph">
+                <img src="./assets/images/icon-checkmark.svg" alt="" />
+              </span>
+            </button>
+            <p>Precipitation</p>
+            <button class="btn-group" id="mm-btn">
+              Millimeters(mm)
+              <span id="icon-checkmark" class="checkMark-Mm">
+                <img src="./assets/images/icon-checkmark.svg" alt="" />
+              </span>
+            </button>
+            <button class="btn-group" id="in-btn">
+              Inches (in)
+              <span id="icon-checkmark" class="checkMark-In">
+                <img src="./assets/images/icon-checkmark.svg" alt="" />
+              </span>
+            </button>
+          </div>
+        </div>
+      </header>
+
+      <h1 class="howToday">How's the sky looking today?</h1>
+
+      <div class="search-bar">
+        <input
+          type="text"
+          placeholder="  Search for a place..."
+          class="cityInput" id="cityInput"
+        />
+        <button type="submit" class="searchBTN" id="searchBTN">Search</button>
+      </div>
+
+      <div class="main" id="mainContent" style="visibility:hidden;">
+        <div class="right">
+          <div class="image-container">
+            <img
+              src="./assets/images/bg-today-large.svg"
+              alt=""
+              class="large-bg"
+            />
+            <img
+              src="./assets/images/bg-today-small.svg"
+              alt=""
+              class="small-bg"
+            />
+          <div class="todays-overlay">
+            <div class="city-date">
+              <h2 id="location"></h2>
+              <p id="todaysDate"></p>
+            </div>
+            <div class="degree-display">
+              <img
+                src="./assets/images/icon-sunny.webp"
+                alt=""
+                id="Todays-weather-icon"
+              />
+              <span class="todaysDegree"></span>
+            </div>
+          </div>
+          </div>
+
+          <div class="weather-card">
+            <div class="display-card">
+              <p>Feels Like</p>
+              <h3 id="feels"></h3>
+            </div>
+            <div class="display-card">
+              <p>Humidity</p>
+              <h3 id="Humidity-value"></h3>
+            </div>
+            <div class="display-card">
+              <p>Wind</p>
+              <h3 id="Wind-value"></h3>
+            </div>
+            <div class="display-card">
+              <p>Precipitation</p>
+              <h3 id="Precipitation-value"></h3>
+            </div>
+          </div>
+
+
+<h2>Daily forecast</h2>
+<div class="forecastCard" id="forecast-card">
+  <!-- Forecast items will be added here by JS -->
+</div>
+</div>
+
+        <div class="left">
+          <div class="hourly-forecast">
+            <p>Hourly Forecast</p>
+            <button id="days-dropdown" class="dayBTN">
+              Tuesday<img
+                src="./assets/images/icon-dropdown.svg"
+                alt=""
+                class="dropdown-icon"
+              />
+            </button>
+            <div
+              class="weeks-dropdown"
+              id="weeks-dropdown"
+              style="display: none"
+            >
+              <button id="tue-hourForcast">Tuesday</button>
+              <button id="wed-hourForcast">Wednesday</button>
+              <button id="thur-hourForcast">Thursday</button>
+              <button id="Fri-hourForcast">Friday</button>
+              <button id="sat-hourForcast">Saturday</button>
+              <button id="sun-hourForcast">Sunday</button>
+              <button id="mon-hourForcast">Monday</button>
+            </div>
+          </div>
+          <div class="hour-temp" id="hour-tempDisplay">
+            
+          </div>
+        </div>
+      </div>
+      <div class="apiError" id="errorMessage">
+        <img src="./assets/images/icon-error.svg" alt="" class="retryIcon" />
+        <h1>Something went Wrong</h1>
+        <p>
+          we couldn't connect to the server(Api error)<br />
+          please try again in a few moments
+        </p>
+        <button id="retryBTN" class="retryBTN">
+          <img src="./assets/images/icon-retry.svg" alt="" />Retry
+        </button>
+      </div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
