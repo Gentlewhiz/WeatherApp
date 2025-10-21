@@ -92,8 +92,17 @@ header{
 .search-bar{
   margin: 20px auto;
   display: flex;
+  flex-direction: column;
+  gap: 10rem;
   align-items: center;
   width: fit-content;
+}
+.searchText{
+  gap: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
 }
 .searchIcon{
   position: absolute;
@@ -343,9 +352,6 @@ header{
   gap: 2rem;
   text-align: center;
   justify-content: center;
-  position:absolute;
-  top: 30rem;
-  left: 55rem;
 }
 .apiError button{
   width: 30%;
@@ -420,6 +426,10 @@ header{
 @media (max-width: 480px) {
   .container{
     width: 100%;
+  }
+  .apiError{
+    font-size: 10px;
+    margin-top: 20px;
   }
   .hourly-forecast p{
     font-size: 20px;
@@ -511,6 +521,10 @@ header{
   .container{
     width: 100%;
   }
+  .apiError{
+    font-size: 10px;
+    margin-top: 20px;
+  }
   .todays-overlay .degree-display .todaysDegree{
     font-size: 3rem;
   }
@@ -594,17 +608,8 @@ header{
 }
 @media screen and (min-width: 320px) and (max-width:568px){
   .apiError{
-    top: 40rem;
-    left: 6.5rem;
-    font-size: 1.2rem;
-    position: static;
-    transform: translate(2%, -1330%);
-  }
-   .apiError .retryBTN {
-    font-size: 1.2rem;
-    position: inherit;
-    transform: translate(50%, -0%);
-    text-align: center;
+    font-size: 10px;
+    margin-top: 20px;
   }
   .todays-overlay .degree-display .todaysDegree{
     font-size: 3rem;
@@ -653,24 +658,15 @@ header{
   .display-forecast{
     height: 160px;
   }
-.howToday{
+  .howToday{
     text-align: center;
     margin-bottom: 1.5rem;
     font-weight: bolder;
     font-size: 1.2rem;
   }
   .apiError{
-    top: 40rem;
-    left: 7.5rem;
-    font-size: 1.2rem;
-    position: static;
-    transform: translate(2%, -1200%);
-  }
-   .apiError .retryBTN {
-    font-size: 1.2rem;
-    position: inherit;
-    transform: translate(50%, -0%);
-    text-align: center;
+    font-size: 10px;
+    margin-top: 20px;
   }
 }
 @media screen and (min-width: 428px) and (max-width:926px){
@@ -702,17 +698,8 @@ header{
     margin-top: 10px;
   }
   .apiError{
-    top: 40rem;
-    left: 12.5rem;
-    font-size: 1.2rem;
-    position: static;
-    transform: translate(2%, -1200%);
-  }
-   .apiError .retryBTN {
-    font-size: 1.2rem;
-    position: inherit;
-    transform: translate(50%, -0%);
-    text-align: center;
+    font-size: 10px;
+    margin-top: 20px;
   }
 }
 @media screen and (min-width: 390px) and (max-width:844px){
@@ -747,16 +734,7 @@ header{
     margin-top: 30px;
   }
   .apiError{
-    top: 40rem;
-    left: 9.7rem;
-    font-size: 1.2rem;
-    position: static;
-    transform: translate(2%, -1200%);
-  }
-   .apiError .retryBTN {
-    font-size: 1.2rem;
-    position: inherit;
-    transform: translate(50%, -0%);
-    text-align: center;
+    font-size: 10px;
+    margin-top: 20px;
   }
 }
