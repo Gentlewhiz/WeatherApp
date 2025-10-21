@@ -98,7 +98,7 @@ header{
   width: fit-content;
 }
 .searchText{
-  gap: 2rem;
+  gap: 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
